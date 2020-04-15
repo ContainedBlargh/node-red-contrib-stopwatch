@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('stopwatch',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            sampling_rate: {value:"100"},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "stopwatch.png",
+        label: function() {
+            return this.name||"stopwatch";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="stopwatch">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="stopwatch">
+    <p>A node that starts and stops a stopwatch when it receives messages. When the stopwatch is stopped, it emits a message with a payload of the elapsed time.</p>
+</script>
