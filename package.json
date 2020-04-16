@@ -12,6 +12,10 @@
   "author": "ContainedBlargh",
   "license": "ISC",
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ContainedBlargh/node-red-contrib-stopwatch.git"
+  },
   "node-red": {
     "nodes": {
       "stopwatch": "stopwatch.js"
